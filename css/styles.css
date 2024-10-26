@@ -1,0 +1,175 @@
+/* ===================================Root CSS====================================== */
+:root {
+    --primary__violet: #3A0CA3;
+    --primary__blue: #4361EE;
+    --secondary__blue: #4CC9F0;
+    --secondary__violet: #7209B7;
+    --pink__color: #F72585;
+    --white__color: #ffffff;
+    --text__color: #0B090A;
+    --text__color2: #2B2B2B;
+    --text__color3: #808080;
+    --text__color4: #AAAAAA;
+    --text__color5: #D4D4D4;
+
+    --poppins__font: "Poppins", serif;
+}
+
+/* ===================================Root CSS====================================== */
+
+/* ===================================Common CSS====================================== */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+img {
+    vertical-align: center;
+}
+
+body {
+    font-family: var(--poppins__font);
+}
+
+/* ===================================Common CSS====================================== */
+
+/* ===================================Top Bar CSS====================================== */
+#topBar {
+    background-color: var(--primary__violet);
+    padding: 12px 100px;
+}
+
+.topBarWrapperRight {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.topBarWrapperLeft__location,
+.topBarWrapperRight__phone,
+.topBarWrapperRight__email {
+    font-size: 13.3px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--white__color);
+    vertical-align: middle;
+}
+
+.topBar--icon {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* ===================================Top Bar CSS====================================== */
+
+/* ===================================Navbar CSS====================================== */
+#customNavbar {
+    padding: 22px 100px;
+    background-color: var(--white__color);
+}
+
+.customNavbarMenuItem {
+    display: flex;
+    column-gap: 32px;
+
+}
+
+.customNavbarMenuItem__link {
+    display: inline-block;
+    font-size: 16px;
+    line-height: auto;
+    font-weight: 500;
+    color: var(--text__color2);
+    padding: 13px 16px;
+    transition: 0.5s ease-in-out;
+}
+
+.customNavbarMenuItem__link:hover {
+    background-color: rgba(67, 98, 238, 0.3);
+    border-radius: 30px;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.addListing__btn {
+    display: inline-block;
+    font-size: 16px;
+    line-height: auto;
+    font-weight: 500;
+    color: var(--text__color2);
+    padding: 15px 26px;
+    border: 2px solid var(--primary__violet);
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+}
+
+.addListing__btn i {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.addListing__btn:hover {
+    background-color: var(--primary__violet);
+    color: var(--white__color);
+}
+
+.login--btn {
+    border: none;
+}
+
+.login--btn:hover {
+    background-color: var(--white__color);
+    color: var(--primary__violet);
+}
+
+/* ===================================Navbar CSS====================================== */
+
+/* ===================================Hero CSS====================================== */
+#hero{
+    padding: 90px 140px;
+    position: relative;
+    
+}
+#hero::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    clip-path: circle(50.0% at 50% 5%);
+    background: linear-gradient(180deg, rgba(76, 202, 240, 0.01) 0%, rgba(67, 98, 238, 0.3) 100%);
+}
+
+/* ===================================Hero CSS====================================== */
